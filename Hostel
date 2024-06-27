@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Room Allocation Results</title>
+</head>
+<body>
+    <h1>Room Allocation Results</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Group ID</th>
+                <th>Hostel Name</th>
+                <th>Room Number</th>
+                <th>Members Allocated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach items="${allocationResults}" var="result">
+                <tr>
+                    <td>${result.groupId}</td>
+                    <td>${result.hostelName}</td>
+                    <td>${result.roomNumber}</td>
+                    <td>${result.membersAllocated}</td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
+</body>
+</html>
